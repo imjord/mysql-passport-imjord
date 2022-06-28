@@ -1,9 +1,8 @@
 const router = require('express').Router();
+const {login, loginView } = require('../../controllers/passportController');
 
 
-router.get('/', (req,res) => {
-    res.render('login');
-})
-
+router.get('/', loginView);
+router.post('/', login);
 
 module.exports = router;

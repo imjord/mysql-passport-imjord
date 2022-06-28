@@ -10,7 +10,7 @@ router.use('/login', loginRouter);
 router.use('/register', registerRouter);
 router.use('/logout', logoutRouter);
 router.use('/profile', profileRouter);
-router.use('/homepage', homeRouter);
+router.use('/', homeRouter);
 
 
 module.exports = router;

@@ -1,9 +1,7 @@
 const router = require('express').Router();
+const {register, registerView } = require('../../controllers/passportController');
 
-
-router.get('/', (req,res) => {
-    res.render('register');
-})
+router.route('/').post(register).get(registerView);
 
 
 module.exports = router;
